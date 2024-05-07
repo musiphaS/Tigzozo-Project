@@ -124,12 +124,17 @@ body {
 .list-small {
   display: flex;
   list-style: none;
+  position: relative;
+  left: 150px;
 }
 
 .small-lists {
   margin-right: 32px;
   font-size: 25px;
   font-family: "Josefin";
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
 }
 
 .small-lists1 {
@@ -137,11 +142,15 @@ body {
   margin-right: 30px;
   font-size: 25px;
   font-family: "Josefin";
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .darkmode {
   height: 33px;
   width: 33px;
+  position: relative;
+  right: 60px;
   cursor: pointer;
 }
 
