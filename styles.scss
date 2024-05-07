@@ -28,6 +28,9 @@ body {
     .second-tag {
         color: #fff;
     }
+    .small-lists {
+        color: white;
+    }
 }
 // dark mode end 
 
@@ -317,7 +320,7 @@ body {
     position: relative;
     height: 35px;
     right: 224px;
-    top: 5px;
+    bottom: 160px;
 }
 .youtube-video {
     position: relative;
@@ -336,7 +339,7 @@ body {
 
 .about-2imgs {
     position: relative;
-    top: 40px;
+    top: 65px;
 }
 .img-about2 {
     height: 270px;
@@ -626,6 +629,7 @@ body {
 .footer-2 {
     margin-top: 25px;
     font-size: 20px;
+    line-height: 1.7;
 }
 .under-line {
     text-decoration: underline;
