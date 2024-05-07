@@ -1,0 +1,985 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Josefin";
+    src: url(JosefinSans-Regular.ttf);
+}
+@font-face {
+    font-family:"slickFont";
+    src:url(GreatVibes-Regular-webfont.ttf)
+}
+
+// dark mode end
+body {
+    transition: background-color 0.3s ease;
+}
+
+.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+.dark-mode {
+    background-color: #1f1f1f;
+    color: #fff;
+
+    .second-tag {
+        color: #fff;
+    }
+}
+// dark mode end 
+
+.main-navbar {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0px 0px 0px;
+    font-family: "Josefin";
+    position: relative;
+    top: 15px;
+}
+
+.lists-items {
+    display: flex;
+    // position: relative;
+    // left: 120px;
+}
+
+.list-small {
+    display: flex;
+    list-style: none;
+}
+
+.small-lists {
+    margin-right: 32px;
+    font-size: 25px;
+    font-family: "Josefin";
+}
+.small-lists1 {
+    color: #742296;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: "Josefin";
+    
+}
+// code for dark theme mode.
+
+// code for dark theme mode end.
+
+.darkmode {
+    height: 33px;
+    width: 33px;
+    // position: relative;
+    // left: 50px;
+    cursor: pointer;
+}
+
+.tig-logo {
+    height: 53px;
+    position: relative;
+    right: 120px;
+    // position: absolute;
+    // left: 50px;
+}
+
+.banner-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 90px 0px;
+}
+
+.fa-solid {
+    font-size: 20px;
+}
+
+.text-banner {
+    padding: 60px;
+    
+
+    .line-top {
+        margin-top: 50px;
+        color: #742296;
+        // position: relative;
+        // left: 5px;
+    }
+    h1 {
+        font-family: "Josefin";
+        font-size: 46px;
+    font-weight: bold;
+    }
+    p {
+        font-size: 21px;
+        font-family: "Josefin";
+        // font-weight: 600;
+    }
+}
+.play-1 {
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    margin-right: 10px;
+    // position: relative;
+}
+.first-atags {
+    position: relative;
+    top: 20px;
+    font-family: "Josefin";
+}
+
+.first-tag {
+    background-color: #742296;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    border: 3px solid #742296;
+    font-family: "Josefin";
+    font-size: 18px;
+}
+
+.second-tag {
+    border: 3px solid #742296;
+    border-left: 5px solid #742296;
+    border-right: 5px solid #742296;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: black;
+    font-weight: 600;
+    font-family: "Josefin";
+    font-size: 18px;
+}
+
+
+.images-banner {
+    margin-right: 30px;
+}
+.banner-images {
+    height: 465px;
+    width: 170px;
+    // width: 155px;
+    margin-right: 7px;
+}
+.banner-images1 {
+    height: 450px;
+    width: 170px;
+    position: relative;
+    bottom: 60px;
+    margin-right: 7px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-bottom: 120px;
+    font-family: "Josefin";
+}
+.groom-clients {
+    position: relative;
+    top: 55px;
+    left: 25px;
+}
+
+.about-para1 {
+    font-size: 18px;
+}
+
+.about-btn {
+    background-color: rgb(116, 34, 150);
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-family: "Josefin";
+    font-size: 18px;
+    position: relative;
+    top: 15px;
+}
+
+
+.heading-3 {
+    margin-left: 60px;
+    font-family: "Josefin";
+    font-size: 20px;
+    font-weight: bold;
+}
+.last-heading {
+    margin-top: 80px;
+}
+
+.img-about-dance {
+    height: 372px;
+    width: 400px;
+    margin-top: 3px;
+}
+.you-tube {
+    position: relative;
+    left: 57px;
+}
+.youtube-activation {
+    position: relative;
+    height: 35px;
+    right: 224px;
+    top: 5px;
+}
+.youtube-video {
+    position: relative;
+    // right: 57px;
+}
+
+
+
+.img-about3 {
+    height: 270px;
+    width: 250px;
+    position: relative;
+    bottom: 50px;
+    object-fit: cover;
+}
+
+.about-2imgs {
+    position: relative;
+    top: 40px;
+}
+.img-about2 {
+    height: 270px;
+    width: 250px;
+    position: relative;
+    right: 8px;
+    top: 30px;
+    object-fit: cover;
+}
+.about-para2 {
+    margin-top: 15px;
+}
+
+
+// .about-2imgs {
+//     margin-top: 65px;
+// }
+// .about-para2 {
+//     font-size: 18px;
+//     margin-top: 16px;
+// }
+// .about-btn {
+//     background-color: #742296;
+//     color: white;
+//     padding: 10px 15px;
+//     text-decoration: none;
+//     position: relative;
+//     top: 36px;
+//     // margin-top: 20px;
+// }
+.services {
+    padding: 50px 0;
+    font-family: "Josefin";
+}
+
+.service-img2 {
+    background-color: #742296;
+    width: 340px;
+    height: 540px;
+    h3 {
+        color: white;
+        font-size: 20px;
+        font-family: "Josefin";
+    }
+    p{
+        color: white;
+        font-size: 20px;
+        font-family: "Josefin";
+    }
+}
+
+.under-line1 {
+    text-decoration: underline;
+    margin-left: 35px;
+}
+.services-text {
+    margin-left: 35px;
+}
+.service-text1 {
+    margin-left: 24px;
+    padding-top: 15px;
+}
+.service-text2 {
+    margin-left: 24px;
+    padding-bottom: 25px;
+}
+.services-images1 {
+    width: 340px;
+    height: 540px;
+}
+
+
+.services-images3 {
+    width: 340px;
+    height: 540px;
+}
+
+
+.close {
+    display: flex;
+    justify-content:flex-end;
+}
+
+.services-textinside {
+    display: flex;
+    justify-content: center;
+
+    h3 {
+    position: relative;
+    bottom: 87px;
+    color: white;
+    font-weight: bold;
+    font-family: "Josefin";
+    font-size: 30px;
+    }
+}
+.slide-1 {
+    height: 37px;
+    width: 37px;
+    position: relative;
+    right: 29px;
+    bottom: 37px;
+}
+.close-1 {
+    position: relative;
+    bottom: 29px;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Josefin";
+}
+.clients-pic1 {
+    height: 340px;
+    width: 450px;
+}
+.clients-pic2 {
+    height: 340px;
+    width: 405px;
+}
+
+.heading-32 {
+    margin-bottom: 44px;
+    margin-left: 60px;
+    font-size: 20px;
+    font-family: "Josefin";
+    font-weight: bold;
+}
+
+// .groom-clients {
+//     position: relative;
+//     left: 10px;
+// }
+.groom-heading {
+    margin-top: 20px;
+    font-family: "Josefin";
+    font-size: 20px;
+    font-weight: bold;
+}
+.groom-text {
+    // line-height: 1.2;
+    font-family: "Josefin";
+    font-size: 18px;
+}
+.Bride-clients{
+    margin-right:5px;
+    position: relative;
+    bottom: 50px;
+    right: 25px
+}
+// .Bride-clients {
+//     position: relative;
+//     bottom: 58px;
+//     right: 78px;
+// }
+.bride-heading {
+    margin-top: 20px;
+    font-family: "Josefin";
+    font-size: 20px;
+    font-weight: bold;
+}
+.bride-text {
+    font-size: 18px;
+}
+.last-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // font-family: "Gotham";
+    font-family: "Josefin";
+
+    h3{
+        margin-bottom: 20px;
+        font-weight: bold;
+        // text-shadow: 1px rgba(0, 0, 0, 1);
+    }
+}
+
+.last-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.slick-font {
+    font-family:"slickFont";
+    font-size: 35px;
+    font-weight: lighter;
+}
+.footer-img {
+    display: flex;
+    // padding: 0px 60px;
+    margin-bottom: 40px;
+}
+.footer-images {
+    height: 300px;
+    // width: 140px;
+    width: 120px;
+    // object-fit: contain;
+    margin-right: 6px;
+}
+.footer-images1 {
+    height: 300px;
+    width: 140px;
+    object-fit: contain;
+    margin-right: 6px;
+    position: relative;
+    bottom: 77px;
+}
+
+.footer-para {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    // font-family: "Gotham";
+    font-family: "Josefin";
+}
+
+
+// .last-heading {
+//     margin-bottom: 40px;
+// }
+
+.last-btn {
+    background-color: rgba(116,34,150,1);
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    // font-family: "Gotham";
+    font-family: "Josefin";
+    font-size: 20px;
+}
+
+.follow-up-btn {
+    padding-bottom: 50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #742296;
+    color: white;
+    // font-family: "Gotham";
+    font-family: "Josefin";
+    padding-bottom: 30px;
+}
+
+.footer-1 {
+    font-size: 20px;
+}
+.footer-1 img {
+    height: 80px;
+    width: 130px;
+    object-fit: contain;
+    margin-top: 25px;
+}
+
+.footer-2 {
+    margin-top: 25px;
+    font-size: 20px;
+}
+.under-line {
+    text-decoration: underline;
+    // font-weight: bold;
+    font-size: 22px;
+}
+.fa-regular {
+    font-size: 20px;
+    margin-right: 15px ;
+}
+.fa-brands {
+    font-size: 30px;
+    margin-right: 15px;
+}
+.fa-solid {
+    margin-right: 10px;
+}
+
+
+@media only screen and (max-width:576px) {
+
+    body {
+        transition: background-color 0.3s ease;
+    }
+    
+    .light-mode {
+        background-color: #fff;
+        color: #000;
+    }
+    .dark-mode {
+        background-color: #1f1f1f;
+        color: #fff;
+    
+        .second-tag {
+            color: #fff;
+        }
+    }
+   
+    .tig-logo {
+        height: 53px;
+        right: 10px;
+    }
+    .small-lists1 {
+        font-size: 14px;
+    }
+    .banner-section {
+        display: flex;
+        flex-direction: column;
+        margin: 0px
+    }
+    .small-lists1 {
+        font-size: 14px;
+        display: none;
+    }
+    .darkmode {
+        position: relative;
+        // right: 0px;
+        left: 5px;
+    }
+
+    .small-lists {
+        font-size: 14px;
+        display: none;
+    }
+    .text-banner h1 {
+        font-size: 27px;
+        // font-weight: bold;
+    }
+    .text-banner p {
+        font-size: 14px;
+    }
+    .first-tag {
+        font-size: 10px;
+    }
+    .second-tag {
+        font-size: 10px;
+    }
+    .play-1 {
+        height: 20px;
+        width: 20px;
+    }
+    .text-banner {
+        padding: 30px;
+        position: relative;
+        bottom: 60px;
+    }
+    .text-banner h1 {
+        font-size: 18px;
+        margin-top: 75px;
+    }
+    
+    .images-banner {
+        margin-right: 5px;
+        padding: 5px;
+        position: relative;
+        bottom: 60px;
+        left: 12px;
+    }
+    // .heading-3 {
+    //     position: relative;
+    //     bottom: 90px;
+    // }
+    .banner-images {
+        height: 438px;
+        padding-left: 8px;
+    }
+    .banner-images1 {
+        bottom: 34px;
+        display: none;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .img-about2 {
+        display: none;
+    }
+    .about-para1 {
+        font-size: 13px;
+        margin-bottom: 80px;
+    }
+    .img-about3 {
+        height: 332px;
+        width: 257px;
+        position: relative;
+        right: 42px;
+        display: none;
+    }
+    .img-about-dance {
+        height: 283px;
+        // width: 320px;
+        width: 341px;
+        position: relative;
+        right: 12px;
+    }
+    .youtube-video {
+        position: relative;
+        left: 40px;
+    }
+    .youtube-activation {
+        position: relative;
+        height: 35px;
+        left: 140px;
+        top: -162px;
+    }
+    .about-para2 {
+        font-size: 13px;
+        margin-bottom: 100px;
+    }
+    .about-btn {
+        font-size: 12px;
+        top: -80px;
+    }
+    // .about-btn {
+    //     top: 10px;
+    // }
+    .heading-32 {
+        margin-bottom: 44px;
+        // margin-left: 21px;
+        font-size: 16px;
+        position: relative;
+        bottom: 124px;
+    }
+    .footer-img {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        left: 42px;
+    }
+    // .youtube-activation {
+    //     right: 180px;
+    // }
+    .service-img2 {
+        margin-bottom: 80px;
+        width: 341px;
+        height: 444px;
+        position: relative;
+        bottom: 135px;
+        left: 16px;
+    }
+    .service-img2 h3 {
+        font-size: 16px;
+    }
+    .services-images1 {
+        width: 341px;
+        height: 444px;
+        position: relative;
+        bottom: 86px;
+        left: 16px;
+    }
+    .services-images3 {
+        height: 460px;
+        width: 341px;
+        position: relative;
+        bottom: 196px;
+        left: 16px;
+    }
+    .service-img2 p {
+        font-size: 14px;
+    }
+    .services-textinside h3 {
+        font-size: 20px;
+    }
+    .services {
+        padding: 0px;
+        // font-family: "Josefin";
+    }
+    .slide-1 {
+        right: 12px;
+        position: relative;
+        bottom: 233px;
+    }
+    .clients {
+        display: flex;
+        flex-direction: column;
+        margin-left: 16px;
+        position: relative;
+        bottom: 150px;
+        overflow: hidden;
+    }
+    .groom-text {
+    font-family: "Josefin";
+    font-size: 14px;
+}
+    // .footer-images {
+    //     height: 300px;
+    //     width: 50px;
+    // }
+    .footer-images {
+        width: 160px;
+        position: relative;
+        bottom: 20px;
+        height: 303px;
+        margin-bottom: 8px;
+    }
+    .footer-images1 {
+        height: 292px;
+        width: 150px;
+        object-fit: cover;
+        position: relative;
+        bottom: 0px;
+        margin-bottom: 8px;
+    }
+    .Bride-clients {
+    margin-right: 5px;
+    position: relative;
+    top: 80px;
+    left: 12px;
+}
+    .clients-pic1 {
+        height: 276px;
+        width: 341px;
+        position: relative;
+        right: 13px;
+        object-fit: cover;
+    }
+    .clients-pic2 {
+        height: 276px;
+        width: 340px;
+        object-fit: cover;
+    }
+.last-heading {
+    margin-top: 0px;
+}
+.footer-1 {
+    font-size: 13px;
+}
+.footer-2 {
+    font-size: 14px;
+}
+.fa-brands {
+    font-size: 20px;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+.under-line {
+    // text-decoration: underline;
+    font-size: 18px;
+}
+.last-section {
+    overflow: hidden;
+}
+.last-btn {
+    font-size: 17px;
+}
+}
+
+@media only screen and (min-width:577px) and (max-width:768px) {
+    .tig-logo {
+        height: 53px;
+        position: relative;
+        left: 24px;
+        // overflow: hidden;
+    }
+    .darkmode {
+        left: 20px;
+    }
+    .small-lists {
+        // margin-right: 32px;
+        font-size: 20px;
+        // overflow: hidden;
+        // font-family: "Josefin";
+    }
+    .small-lists1 {
+        // color: #742296;
+        // margin-right: 30px;
+        font-size: 20px;
+        // overflow: hidden;
+        // font-family: "Josefin";
+    }
+    .text-banner h1 {
+        // font-family: "Josefin";
+        font-size: 24px;
+        // overflow: hidden;
+        // font-weight: bold;
+    }
+    .first-tag {
+        padding: 5px 10px;
+        // overflow: hidden;
+    }
+    .text-banner {
+        padding: 5px;
+        margin-left: 26px;
+        position: relative;
+        bottom: 55px;
+    }
+    .first-tag {
+        font-size: 14px;
+        // overflow: hidden;
+    }
+    .second-tag {
+        font-size: 14px;
+        display: none;
+
+    }
+    .images-banner {
+        display: flex;
+        margin-right: 16px;
+        // overflow: hidden;
+    }
+
+    .banner-images {
+        height: 240px;
+        width: 100px;
+        margin-right: 7px;
+        position: relative;
+        top: 50px;
+        // overflow: hidden;
+    }
+    .banner-images1 {
+        height: 265px;
+        width: 110px;
+    }
+    .text-banner p {
+        font-size: 12px;
+        // overflow: hidden;
+        // font-family: "Josefin";
+    }
+    .heading-3 {
+        font-size: 16px;
+        // overflow: hidden;
+    }
+    .about-para1 {
+        font-size: 13px;
+        // overflow: hidden;
+    }
+    .img-about3 {
+        height: 245px;
+        width: 295px;
+        position: relative;
+        top: 12px;
+        // overflow: hidden;
+        /* bottom: 50px; */
+    }
+    .about {
+        overflow: hidden;
+    }
+    .img-about2 {
+        display: none;
+    }
+    .about-para1 {
+        font-size: 13px;
+    }
+    .about-para2 {
+        font-size: 13px;
+        margin-top: 40px;
+    }
+    .img-about-dance {
+        height: 250px;
+        width: 330px;
+        overflow: hidden;
+        // margin-top: 3px;
+    }
+    .youtube-video {
+        position: relative;
+        left: 37px;
+    }
+    .you-tube {
+        position: relative;
+        left: 9px;
+    }
+    .about {
+        margin-bottom: 10px;
+        // font-family: "Josefin";
+    }
+    .services-images3 {
+        width: 220px;
+        height: 435px;
+        object-fit: cover;
+    }
+    .services-images1 {
+        width: 220px;
+        height: 435px;
+        object-fit: cover;
+    }
+    .services-textinside h3 {
+        font-size: 24px;
+    }
+    .slide-1 {
+        right: 10px;
+    }
+    .service-img2 {
+        width: 220px;
+        height: 435px;
+    }
+    .service-img2 h3 {
+        font-size: 16px;
+    }
+    .service-img2 p {
+        font-size: 14px;
+    }
+    .close-1 {
+        position: relative;
+        bottom: 38px;
+        right: 0px;
+    }
+    .heading-32 {
+        font-size: 16px;
+    }
+    .clients-pic1 {
+        height: 285px;
+        width: 325px;
+    }
+    .clients-pic2 {
+        height: 285px;
+        width: 325px;
+    }
+    .footer-images {
+        height: 300px;
+        width: 100px;
+        object-fit: cover;
+    }
+    .footer-1 {
+        overflow: hidden;
+        font-size: 13px;
+    }
+    .footer-para {
+        font-size: 18px;
+    }
+    .under-line {
+        // text-decoration: underline;
+        font-size: 16px;
+    }
+    .footer-2 {
+        font-size: 14px;
+    }
+    .footer-images1 {
+        width: 124px;
+    }
+    .last-btn {
+    font-size: 18px;
+    }
+    .fa-brands {
+    font-size: 20px;
+    }
+}
