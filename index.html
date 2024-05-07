@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
@@ -21,14 +21,28 @@
                 <li class="small-lists">About Us</li>
                 <li class="small-lists1">Services <i class="fa-solid fa-angle-down arrow"></i></li>
                 <li class="small-lists">Testimonials</li>
-                <div>
-                    <img src="dark mode.jpg" alt="" onclick="toggleDarkMode()" class="darkmode">
-                </div>
             </ul>
         </div>
 
+         <!-- bars menu  -->
         
+     <div id="hamburger" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div>
+            <img src="dark mode.jpg" alt="" onclick="toggleDarkMode()" class="darkmode">
+        </div>
+      </ul>
     </div>
+    <!-- bars menu  -->
+    </div>
+    
     <!-- navbar section end -->
     
     <!-- banner section  -->
@@ -89,9 +103,8 @@
     <!-- services section  -->
 <div class="services">
     <h3 class="heading-32">Services we offer at Tigzozo media</h3>
-    <div class="container">
-        <div class="row g-1">
-            <div class="col-md-4">
+            <div class="box-3">
+            <div class="service1">
                 <img src="services1.jpg" alt="" class="services-images1">
                 <div class="close">
                 <img src="slide.jpg" alt="" class="slide-1">
@@ -101,7 +114,7 @@
             </div>
             </div>
             
-            <div class="col-md-4">
+            <div class="service2">
             <div class="service-img2">
                 <h3 class="service-text1">Digital services</h3>
                 <p class="under-line1">1. Logos</p>
@@ -120,18 +133,18 @@
             </div>
             </div>
             
-            <div class="col-md-4">
+            <div class="service3">
                 <img src="services2.jpg" alt="" class="services-images3">
             <div class="close">
-                <img src="slide.jpg" alt="" class="slide-1">
+                <img src="slide.jpg" alt="" class="slide-2">
             </div>
             <div class="services-textinside">
                 <h3>Media</h3>
             </div>
             </div>
         </div>
-    </div>
 </div>
+
 <!-- clients section  -->
 <h3 class="heading-32">What our happy clients say about Tigzozo media</h3>
 <div class="clients">
@@ -151,6 +164,7 @@
 
 <div class="Bride-clients">
     <img src="services4.jpg" alt="" class="clients-pic2">
+<div class="miranda-text">
     <p class="bride-heading">Miranda</p>
     <p>Bride</p>
     <p class="bride-text">"The team at Tigzozo took the time<br>
@@ -160,6 +174,7 @@
         wholeheartedly recommend Tigzozo media<br>
         to everyone we know."
     </p>
+</div>
 </div>
 </div>
 <!-- clients section  -->
@@ -225,7 +240,7 @@
 </div>
 <!-- footer end  -->
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
     <script src="tig.js"></script>
 </body>
 </html>

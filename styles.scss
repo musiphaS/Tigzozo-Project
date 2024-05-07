@@ -12,7 +12,7 @@
     src:url(GreatVibes-Regular-webfont.ttf)
 }
 
-// dark mode end
+// dark mode 
 body {
     transition: background-color 0.3s ease;
 }
@@ -39,6 +39,93 @@ body {
     position: relative;
     top: 15px;
 }
+
+#hamburger {
+    margin: auto 0;
+    // display: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#hamburger div {
+    width: 35px;
+    height: 3px;
+    background-color: #742296;
+    margin: 6px 0;
+    transition: 0.5s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    height: 91vh;
+    margin-top: 16px;
+    font-family: "Montse";
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    height: 550px;
+    width: 100%;
+}
+
+
+.dropbtn {
+    background-color: #742296;
+    color: white;
+    padding: 8px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+
+  
+.dropdown {
+    float: right;
+    position: absolute;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    overflow: auto;
+    right: 0;
+  }
+
+  .dropdown-content a {
+    color: #f1f1f1;
+    background-color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    // width: 100px;
+
+  }
+
+  .show {
+    display: block;
+}
+
 
 .lists-items {
     display: flex;
@@ -273,12 +360,19 @@ body {
 .services {
     padding: 50px 0;
     font-family: "Josefin";
+    // justify-content: center;
+    // justify-content: space-evenly;
 }
-
+.box-3 {
+    display: flex;
+    justify-content: space-evenly;
+}
 .service-img2 {
     background-color: #742296;
     width: 340px;
     height: 540px;
+    line-height: 2.2;
+
     h3 {
         color: white;
         font-size: 20px;
@@ -311,6 +405,16 @@ body {
     height: 540px;
 }
 
+.service1 {
+    position: relative;
+    left: 65px;
+}
+.service3 {
+    position: relative;
+    right: 68px;
+}
+
+
 
 .services-images3 {
     width: 340px;
@@ -340,12 +444,22 @@ body {
     height: 37px;
     width: 37px;
     position: relative;
-    right: 29px;
-    bottom: 37px;
+    right: 0px;
+    bottom: 41px;
 }
+
+.slide-2 {
+    height: 37px;
+    width: 37px;
+    position: relative;
+    right: 0px;
+    bottom: 41px
+}
+
+
 .close-1 {
     position: relative;
-    bottom: 29px;
+    bottom: 21px;
 }
 
 .clients {
@@ -520,9 +634,30 @@ body {
     margin-right: 10px;
 }
 
+@media (min-width: 576px) {
+    #hamburger {
+        display: none;
+    }
+}
 
 @media only screen and (max-width:576px) {
 
+    #hamburger {
+        display: block;
+        margin: 30px 42px;
+        // position: relative;
+        // bottom: 25px;
+    }
+
+    #hamburger div {
+        position: relative;
+        bottom: 10px;
+    }
+
+    .open .menu {
+        height: 101vh;
+        margin-top: -57px;
+    }
     body {
         transition: background-color 0.3s ease;
     }
@@ -558,8 +693,8 @@ body {
     }
     .darkmode {
         position: relative;
-        // right: 0px;
-        left: 5px;
+        right: -83px;
+        bottom: 66px;
     }
 
     .small-lists {
@@ -584,20 +719,23 @@ body {
         width: 20px;
     }
     .text-banner {
-        padding: 30px;
+        // padding: 30px;
         position: relative;
-        bottom: 60px;
+        // bottom: 60px;
+        bottom: 29px;
+        padding: 15px;
     }
     .text-banner h1 {
         font-size: 18px;
-        margin-top: 75px;
+        margin-top: 30px;
     }
     
     .images-banner {
         margin-right: 5px;
         padding: 5px;
         position: relative;
-        bottom: 60px;
+        // bottom: 60px;
+        bottom: 20px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -626,7 +764,8 @@ body {
     }
     .about-para1 {
         font-size: 13px;
-        margin-bottom: 80px;
+        position: relative;
+        right: 30px;
     }
     .img-about3 {
         height: 332px;
@@ -641,16 +780,18 @@ body {
         width: 341px;
         position: relative;
         right: 12px;
+        top: 30px;
     }
     .youtube-video {
         position: relative;
-        left: 40px;
+        left: 30px;
     }
     .youtube-activation {
         position: relative;
         height: 35px;
         left: 140px;
-        top: -162px;
+        // top: -162px;
+        top: -136px;
     }
     .about-para2 {
         font-size: 13px;
@@ -668,7 +809,8 @@ body {
         // margin-left: 21px;
         font-size: 16px;
         position: relative;
-        bottom: 124px;
+        bottom: 110px;
+        right: 25px;
     }
     .footer-img {
         display: flex;
@@ -679,13 +821,18 @@ body {
     // .youtube-activation {
     //     right: 180px;
     // }
+    .box-3 {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
     .service-img2 {
         margin-bottom: 80px;
         width: 341px;
         height: 444px;
         position: relative;
         bottom: 135px;
-        left: 16px;
+        left: 20px;
     }
     .service-img2 h3 {
         font-size: 16px;
@@ -695,14 +842,15 @@ body {
         height: 444px;
         position: relative;
         bottom: 86px;
-        left: 16px;
+        right: 45px;
     }
+    
     .services-images3 {
         height: 460px;
         width: 341px;
         position: relative;
         bottom: 196px;
-        left: 16px;
+        left: 88px;
     }
     .service-img2 p {
         font-size: 14px;
@@ -712,21 +860,33 @@ body {
     }
     .services {
         padding: 0px;
+        overflow: hidden;
         // font-family: "Josefin";
     }
     .slide-1 {
-        right: 12px;
+        right: 80px;
         position: relative;
-        bottom: 233px;
+        bottom: 127px;
+    }
+
+    .slide-2 {
+        position: relative;
+        bottom: 237px;
+        left: 54px;
+    }
+    .close-1 {
+        position: relative;
+        top: 25px;
     }
     .clients {
         display: flex;
         flex-direction: column;
         margin-left: 16px;
         position: relative;
-        bottom: 150px;
+        bottom: 60px;
         overflow: hidden;
     }
+
     .groom-text {
     font-family: "Josefin";
     font-size: 14px;
@@ -753,14 +913,16 @@ body {
     .Bride-clients {
     margin-right: 5px;
     position: relative;
-    top: 80px;
-    left: 12px;
-}
+    top: 0px;
+    left: 0px;
+    margin-top: 100px;
+    }
+
     .clients-pic1 {
         height: 276px;
         width: 341px;
         position: relative;
-        right: 13px;
+        right: 25px;
         object-fit: cover;
     }
     .clients-pic2 {
@@ -770,6 +932,10 @@ body {
     }
 .last-heading {
     margin-top: 0px;
+}
+.last-heading h3 {
+    position: relative;
+    top: 10px;
 }
 .footer-1 {
     font-size: 13px;
@@ -795,6 +961,18 @@ body {
 .last-btn {
     font-size: 17px;
 }
+.bride-text {
+    font-size: 14px;
+}
+
+.miranda-text{
+    margin-left: 30px;
+}
+
+.last-section {
+    margin-top: 25px;
+}
+
 }
 
 @media only screen and (min-width:577px) and (max-width:768px) {
