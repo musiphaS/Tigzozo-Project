@@ -598,6 +598,9 @@ body {
         padding: 5px;
         position: relative;
         bottom: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         // left: 12px;
     }
     // .heading-3 {
