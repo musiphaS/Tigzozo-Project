@@ -487,7 +487,7 @@ body {
 }
 
 .groom-heading {
-  margin-top: 20px;
+  margin-top: 40px;
   font-family: "Josefin";
   font-size: 20px;
   font-weight: bold;
@@ -665,6 +665,7 @@ body {
   .tig-logo {
     height: 53px;
     right: 10px;
+    top: 13px;
   }
   .small-lists1 {
     font-size: 14px;
@@ -726,8 +727,11 @@ body {
     justify-content: center;
   }
   .banner-images {
-    height: 438px;
+    height: 394px;
     padding-left: 8px;
+    width: 155px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .banner-images1 {
     bottom: 34px;
@@ -755,15 +759,15 @@ body {
     display: none;
   }
   .img-about-dance {
-    height: 283px;
-    width: 341px;
-    position: relative;
+    height: 259px;
+    width: 322px;
     right: 20px;
     top: 30px;
   }
   .youtube-video {
     position: relative;
     left: 30px;
+    top: 27px;
   }
   .youtube-activation {
     position: relative;
@@ -777,20 +781,20 @@ body {
   }
   .about-btn {
     font-size: 12px;
-    top: -80px;
+    position: relative;
+    top: -40px;
   }
   .heading-32 {
-    margin-bottom: 44px;
     font-size: 16px;
     position: relative;
-    bottom: 110px;
-    right: 25px;
+    bottom: 210px;
+    right: 19px;
   }
   .footer-img {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    left: 42px;
+    left: 60px;
   }
   .box-3 {
     display: flex;
@@ -799,28 +803,28 @@ body {
   }
   .service-img2 {
     margin-bottom: 80px;
-    width: 341px;
-    height: 444px;
+    width: 275px;
+    height: 387px;
     position: relative;
     bottom: 135px;
-    left: 20px;
+    left: 55px;
   }
   .service-img2 h3 {
     font-size: 16px;
   }
   .services-images1 {
-    width: 341px;
-    height: 444px;
+    width: 275px;
+    height: 387px;
     position: relative;
     bottom: 86px;
-    right: 45px;
+    right: 10px;
   }
   .services-images3 {
-    height: 460px;
-    width: 341px;
+    height: 387px;
+    width: 275px;
     position: relative;
     bottom: 196px;
-    left: 88px;
+    left: 123px;
   }
   .service-img2 p {
     font-size: 14px;
@@ -831,45 +835,49 @@ body {
   .services {
     padding: 0px;
     overflow: hidden;
+    position: relative;
+    bottom: 71px;
+    right: 10px;
   }
   .slide-1 {
-    right: 80px;
+    right: 110px;
     position: relative;
     bottom: 127px;
   }
   .slide-2 {
     position: relative;
     bottom: 237px;
-    left: 54px;
+    left: 23px;
   }
   .close-1 {
     position: relative;
-    top: 25px;
+    bottom: 32px;
   }
   .clients {
     display: flex;
     flex-direction: column;
     margin-left: 16px;
     position: relative;
-    bottom: 60px;
+    bottom: 200px;
     overflow: hidden;
   }
   .groom-text {
     font-family: "Josefin";
     font-size: 14px;
+    margin-top: 40px;
   }
   .footer-images {
-    width: 160px;
+    width: 120px;
     position: relative;
     bottom: 20px;
-    height: 303px;
+    height: 362px;
     margin-bottom: 8px;
   }
   .footer-images1 {
-    height: 292px;
-    width: 150px;
+    height: 362px;
+    width: 120px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     position: relative;
     bottom: 0px;
     margin-bottom: 8px;
@@ -882,18 +890,20 @@ body {
     margin-top: 100px;
   }
   .clients-pic1 {
-    height: 276px;
-    width: 341px;
+    height: 387px;
+    width: 275px;
     position: relative;
-    right: 25px;
+    left: 9px;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .clients-pic2 {
-    height: 276px;
-    width: 340px;
+    height: 387px;
+    width: 275px;
+    position: relative;
+    left: 35px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .last-heading {
     margin-top: 0px;
@@ -927,6 +937,7 @@ body {
   }
   .bride-text {
     font-size: 14px;
+    margin-top: 40px;
   }
   .miranda-text {
     margin-left: 30px;
