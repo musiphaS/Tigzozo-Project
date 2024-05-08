@@ -31,6 +31,10 @@ body {
   color: white;
 }
 
+.light-mode {
+  display: none;
+}
+
 .main-navbar {
   display: flex;
   justify-content: space-around;
@@ -188,13 +192,25 @@ body {
 .text-banner p {
   font-size: 21px;
   font-family: "Josefin";
+  margin-top: 20px;
 }
 
 .play-1 {
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
   text-align: center;
   margin-right: 10px;
+  position: relative;
+  top: 7px;
+}
+
+.mark-1 {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  margin-right: 10px;
+  position: relative;
+  top: 7px;
 }
 
 .first-atags {

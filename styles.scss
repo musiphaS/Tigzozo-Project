@@ -24,6 +24,7 @@ body {
 .dark-mode {
     background-color: #1f1f1f;
     color: #fff;
+    // background-image: url(darkmode-light.svg.svg);
 
     .second-tag {
         color: #fff;
@@ -31,6 +32,10 @@ body {
     .small-lists {
         color: white;
     }
+}
+
+.light-mode {
+    display: none;
 }
 // dark mode end 
 
@@ -211,16 +216,31 @@ body {
     p {
         font-size: 21px;
         font-family: "Josefin";
+        margin-top: 20px;
         // font-weight: 600;
     }
 }
+
+
 .play-1 {
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     text-align: center;
     margin-right: 10px;
-    // position: relative;
+    // margin-top: 20px;
+    position: relative;
+    top: 7px;
+    
 }
+.mark-1 {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    margin-right: 10px;
+    position: relative;
+    top: 7px;
+}
+
 .first-atags {
     position: relative;
     top: 20px;
