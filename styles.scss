@@ -83,7 +83,7 @@ body {
     background-color: #742296;
     height: 91vh;
     margin-top: 16px;
-    font-family: "Montse";
+    font-family: "Josefin";
 }
 
 .menu {
@@ -92,6 +92,13 @@ body {
     left: 0;
     height: 550px;
     width: 100%;
+}
+
+.menu-white {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 3.5;
 }
 
 
@@ -690,7 +697,9 @@ body {
 
     .open .menu {
         height: 101vh;
-        margin-top: -57px;
+        margin-top: -28%;
+        z-index: 1;
+        list-style: none;
     }
     body {
         transition: background-color 0.3s ease;
@@ -752,6 +761,14 @@ body {
         height: 20px;
         width: 20px;
     }
+    .mark-1 {
+        height: 20px;
+        width: 20px;
+    }
+    // .mark-1 {
+    //     height: 20px;
+    //     width: 20px;
+    // }
     .text-banner {
         // padding: 30px;
         position: relative;
@@ -813,7 +830,7 @@ body {
         // width: 320px;
         width: 341px;
         position: relative;
-        right: 12px;
+        right: 15px;
         top: 30px;
     }
     .youtube-video {
