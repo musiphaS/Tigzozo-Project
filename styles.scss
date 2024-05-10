@@ -32,6 +32,15 @@ body {
     .small-lists {
         color: white;
     }
+    .play-1 {
+        display: none;
+    }
+    .circle-mode {
+            display: inline-block;
+        }
+    // .circle-mode {
+    //     background-image: url(Icon\ feather-play-circle\ 1\ -purple.svg);
+    // }
 }
 
 .light-mode {
@@ -237,7 +246,12 @@ body {
     // margin-top: 20px;
     position: relative;
     top: 7px;
-    
+}
+
+.circle-mode {
+    height: 30px;
+    width: 30px;
+    display: none;
 }
 .mark-1 {
     height: 30px;
@@ -320,7 +334,7 @@ body {
     font-family: "Josefin";
     font-size: 18px;
     position: relative;
-    top: 15px;
+    top: 30px;
 }
 
 
@@ -335,7 +349,7 @@ body {
 }
 
 .img-about-dance {
-    height: 372px;
+    height: 356px;
     width: 400px;
     margin-top: 3px;
 }
@@ -423,6 +437,21 @@ body {
         font-size: 20px;
         font-family: "Josefin";
     }
+}
+.left-arrow {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    right: 61px;
+    top: 6px;
+}
+
+.left-arrow1 {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    right: 62px;
+    top: 6px;
 }
 
 .under-line1 {
@@ -645,6 +674,7 @@ body {
 
 .footer-1 {
     font-size: 20px;
+    line-height: 1.6;
 }
 .footer-1 img {
     height: 80px;
@@ -675,13 +705,13 @@ body {
     margin-right: 10px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 575.98px) {
     #hamburger {
         display: none;
     }
 }
 
-@media only screen and (max-width:576px) {
+@media only screen and (max-width:575.98px) {
 
     #hamburger {
         display: block;
@@ -720,7 +750,7 @@ body {
    
     .tig-logo {
         height: 53px;
-        right: 10px;
+        left: 18px;
         top: 13px;
     }
     .small-lists1 {
@@ -775,7 +805,7 @@ body {
         position: relative;
         // bottom: 60px;
         bottom: 29px;
-        padding: 15px;
+        padding: 42px;
     }
     .text-banner h1 {
         font-size: 18px;
@@ -816,10 +846,14 @@ body {
     .img-about2 {
         display: none;
     }
+
+    .heading-3 {
+        margin-left: 38px;
+    }
     .about-para1 {
         font-size: 13px;
         position: relative;
-        right: 30px;
+        right: 16px;
     }
     .img-about3 {
         height: 332px;
@@ -849,11 +883,24 @@ body {
     .about-para2 {
         font-size: 13px;
         margin-bottom: 100px;
+        margin-left: 11px;
     }
     .about-btn {
         font-size: 12px;
         position: relative;
-        top: -40px;
+        top: -62px;
+        left: 10px;
+    }
+
+    .left-arrow {
+        position: relative;
+        right: 52px;
+        top: 6px;
+    }
+    .left-arrow1 {
+        position: relative;
+        right: 26px;
+        top: 6px;
     }
     // .about-btn {
     //     top: 10px;
@@ -1037,7 +1084,7 @@ body {
 
 }
 
-@media only screen and (min-width:577px) and (max-width:768px) {
+@media only screen and (min-width:577px) and (max-width:992px) {
     .tig-logo {
         height: 53px;
         position: relative;
@@ -1052,6 +1099,10 @@ body {
         font-size: 20px;
         // overflow: hidden;
         // font-family: "Josefin";
+    }
+    .list-small {
+        position: relative;
+        left: 55px;
     }
     .small-lists1 {
         // color: #742296;
@@ -1092,12 +1143,8 @@ body {
     }
 
     .banner-images {
-        height: 240px;
-        width: 100px;
-        margin-right: 7px;
         position: relative;
-        top: 50px;
-        // overflow: hidden;
+        bottom: 5px;
     }
     .banner-images1 {
         height: 265px;
@@ -1225,4 +1272,8 @@ body {
     .fa-brands {
     font-size: 20px;
     }
+}
+
+@media only screen and (min-width:993px) and (max-width: 1024px) {
+
 }
