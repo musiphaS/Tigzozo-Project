@@ -748,7 +748,7 @@ body {
 
 .form-control {
     padding: 17px 27px;
-    font-family: "Baloo2";
+    font-family: "Josefin";
     font-size: 20px;
     color: rgb(0 62 84);
     width: 560px;
@@ -786,7 +786,7 @@ body {
     padding: 10px 15px;
     border:none;
     border-radius: 5px;
-    margin-top: 45px;
+    margin-top: 5px;
     font-family: "Josefin";
 }
 .homebtn {
@@ -931,6 +931,12 @@ body {
         justify-content: center;
     }
     
+    .services-textinside1 h3 {
+        position: relative;
+        bottom: 267px;
+        left: 234px;
+        font-size: 20px;
+    }
 
     .banner-images {
         height: 354px;
@@ -1012,8 +1018,9 @@ body {
     .heading-32 {
         font-size: 16px;
         position: relative;
-        bottom: 210px;
+        bottom: 276px;
         right: 19px;
+        margin-bottom: 0px;
     }
     .footer-img {
         display: flex;
@@ -1150,7 +1157,7 @@ body {
 }
 .last-heading h3 {
     position: relative;
-    top: 10px;
+    bottom: 90px;
 }
 .footer-1 {
     font-size: 13px;
@@ -1160,6 +1167,9 @@ body {
 }
 .fa-brands {
     font-size: 20px;
+}
+.homebtn {
+    font-size: 14px;
 }
 .footer {
     display: flex;
@@ -1199,7 +1209,7 @@ body {
         // overflow: hidden;
     }
     .darkmode {
-        left: 20px;
+        left: 5px;
     }
     .small-lists {
         // margin-right: 32px;
@@ -1240,7 +1250,7 @@ body {
     }
     .second-tag {
         font-size: 14px;
-        display: none;
+        // display: none;
 
     }
     .images-banner {
@@ -1251,11 +1261,14 @@ body {
 
     .banner-images {
         position: relative;
-        bottom: 5px;
+        bottom: 29px;
+        height: 278px;
+        width: 85px;
     }
+    
     .banner-images1 {
         height: 265px;
-        width: 110px;
+        width: 85px;
     }
     .text-banner p {
         font-size: 12px;
@@ -1299,11 +1312,34 @@ body {
     }
     .youtube-video {
         position: relative;
-        left: 37px;
+        left: 36px;
     }
+    .left-arrow {
+        position: relative;
+        left: 269px;
+        top: -58px;
+    }
+    .left-arrow1 {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    left: 268px;
+    top: -57px;
+}
+.Bride-clients {
+    margin-right: 5px;
+    position: relative;
+    bottom: 20px;
+    left: 36px;
+}
     .you-tube {
         position: relative;
-        left: 9px;
+        left: -26px;
+    }
+
+    #working-methods > iframe {
+        width: 300px;
+        height: 356px;
     }
     .about {
         margin-bottom: 10px;
@@ -1313,17 +1349,36 @@ body {
         width: 220px;
         height: 435px;
         object-fit: cover;
+        position: relative;
+        left: 73px;
     }
     .services-images1 {
         width: 220px;
         height: 435px;
         object-fit: cover;
+        position: relative;
+        right: 60px;
     }
     .services-textinside h3 {
         font-size: 24px;
+        position: relative;
+        bottom: 87px;
+        right: 54px;
     }
+    .close-1 {
+        position: relative;
+        top: 15px;
+    }
+    // .clients {
+    //     overflow: hidden;
+    // }
     .slide-1 {
-        right: 10px;
+        right: 61px;
+    }
+    .slide-2 {
+        position: relative;
+        left: 73px;
+        bottom: 41px;
     }
     .service-img2 {
         width: 220px;
@@ -1334,11 +1389,6 @@ body {
     }
     .service-img2 p {
         font-size: 14px;
-    }
-    .close-1 {
-        position: relative;
-        bottom: 38px;
-        right: 0px;
     }
     .heading-32 {
         font-size: 16px;
@@ -1359,6 +1409,10 @@ body {
     .footer-1 {
         overflow: hidden;
         font-size: 13px;
+        margin: 0px 20px;
+    }
+    .homebtn {
+        font-size: 16px;
     }
     .footer-para {
         font-size: 18px;
@@ -1379,8 +1433,119 @@ body {
     .fa-brands {
     font-size: 20px;
     }
+    .footer {
+        margin-top: 148px;
+    }
 }
 
 @media only screen and (min-width:993px) and (max-width: 1024px) {
+    .banner-images1 {
+        height: 450px;
+        width: 120px;
+    }
+    .tig-logo {
+        position: relative;
+        right: 20px;
+    }
+    .banner-images {
+        height: 465px;
+        width: 120px;
+    }
+    .second-tag {
+        font-size: 16px;
+    }
+    .first-tag {
+        font-size: 16px;
+    }
+    .about-para1 {
+        font-size: 16px;
+    }
+    .text-banner h1 {
+        font-size: 30px;
+    }
+    .img-about3 {
+        width: 180px;
+    }
+    .img-about2 {
+        width: 180px;
+    }
+    .text-banner p {
+        font-size: 16px;
+    }
+   
+    .youtube-video {
+        position: relative;
+        left: 35px;
+    }
+    .services-images3 {
+        width: 270px;
+        height: 540px;
+        position: relative;
+        left: 45px;
+        object-fit: cover;
+    }
+    .services-images1 {
+        width: 270px;
+        position: relative;
+        right: 20px;
+        object-fit: cover;
+    }
 
+    .groom-clients {
+        position: relative;
+        top: 55px;
+        left: 55px;
+    }
+    .footer-images {
+        height: 300px;
+        width: 125px;
+        margin-right: 6px;
+    }
+
+
+    .service-img2 {
+        width: 270px;
+        position: relative;
+        left: 10px;
+    }
+    .slide-1 {
+        height: 37px;
+        width: 37px;
+        position: relative;
+        right: 20px;
+        bottom: 41px;
+    }
+    .slide-2 {
+        position: relative;
+        bottom: 41px;
+        left: 45px;
+    }
+    .heading-32 {
+        overflow: hidden;
+    }
+    .darkmode {
+        right: 14px;
+    }
+    .Bride-clients {
+        margin-right: 5px;
+        position: relative;
+        bottom: 50px;
+        right: -9px;
+        overflow: hidden;
+    }
+    // .banner-images {
+    //     height: 465px;
+    //     width: 77px;
+    // }
+}
+
+@media only screen and (min-width: 1399.98px) {
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #742296;
+        color: white;
+        font-family: "Josefin";
+        margin-top: 128px;
+    }
 }
