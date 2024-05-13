@@ -754,22 +754,30 @@ body {
     width: 560px;
    
 }
+.color-purple {
+    color: #742296;
+    font-family: "Josefin";
+    margin-left: 17px;
+    margin-top: 50px;
+}
+
 .New {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 20px;
-
-    h2 {
-        color: #742296;
-    }
 }
 .form-label {
     color: #742296;
+    font-family: "Josefin";
 }
 .form-select {
     color: #742296;
+    position: relative;
+    width: 99.3%;
+    font-family: "Josefin";
+    bottom: 12px;
 }
 
 .b-submit {
@@ -778,8 +786,16 @@ body {
     padding: 10px 15px;
     border:none;
     border-radius: 5px;
+    margin-top: 45px;
+    font-family: "Josefin";
 }
-
+.homebtn {
+    font-family: "Josefin";
+    color: white;
+    text-decoration: none;
+    margin-top: 32px;
+    font-size: 18px;
+}
 @media (min-width: 575.98px) {
     #hamburger {
         display: none;
