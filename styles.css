@@ -15,6 +15,10 @@ body {
   transition: background-color 0.3s ease;
 }
 
+.circle-mode2 {
+  display: none;
+}
+
 .light-mode {
   background-color: #fff;
   color: #000;
@@ -33,8 +37,23 @@ body {
 .dark-mode .play-1 {
   display: none;
 }
+.dark-mode .mark-1 {
+  display: none;
+}
 .dark-mode .circle-mode {
   display: inline-block;
+  position: relative;
+  top: 5px;
+}
+.dark-mode .circle-mode2 {
+  display: inline-block;
+  position: relative;
+  margin-left: 1px;
+  top: 2px;
+  margin-left: 1px;
+}
+.dark-mode .footer-1 img {
+  background-color: black;
 }
 
 .light-mode {
@@ -145,7 +164,7 @@ body {
   display: flex;
   list-style: none;
   position: relative;
-  left: 150px;
+  left: 100px;
 }
 
 .small-lists {
@@ -154,7 +173,6 @@ body {
   font-family: "Josefin";
   text-decoration: none;
   color: #000;
-  font-weight: bold;
 }
 
 .small-lists1 {
@@ -163,14 +181,13 @@ body {
   font-size: 25px;
   font-family: "Josefin";
   text-decoration: none;
-  font-weight: bold;
 }
 
 .darkmode {
   height: 33px;
   width: 33px;
   position: relative;
-  right: 60px;
+  right: 75px;
   cursor: pointer;
 }
 
@@ -205,7 +222,7 @@ body {
 .text-banner p {
   font-size: 21px;
   font-family: "Josefin";
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .play-1 {
@@ -221,6 +238,11 @@ body {
   height: 30px;
   width: 30px;
   display: none;
+}
+
+.circle-mode2 {
+  height: 28px;
+  width: 28px;
 }
 
 .mark-1 {
@@ -251,8 +273,8 @@ body {
 
 .second-tag {
   border: 3px solid #742296;
-  border-left: 5px solid #742296;
-  border-right: 5px solid #742296;
+  border-left: 6px solid #742296;
+  border-right: 6px solid #742296;
   text-decoration: none;
   padding: 10px 15px;
   color: black;
@@ -267,16 +289,20 @@ body {
 
 .banner-images {
   height: 465px;
-  width: 170px;
+  width: 180px;
   margin-right: 7px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .banner-images1 {
   height: 450px;
-  width: 170px;
+  width: 185px;
   position: relative;
   bottom: 60px;
   margin-right: 7px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .about {
@@ -319,12 +345,6 @@ body {
   margin-top: 80px;
 }
 
-.img-about-dance {
-  height: 356px;
-  width: 400px;
-  margin-top: 3px;
-}
-
 .you-tube {
   position: relative;
   left: 57px;
@@ -339,6 +359,7 @@ body {
 
 .youtube-video {
   position: relative;
+  right: 50px;
 }
 
 .img-about3 {
@@ -367,6 +388,15 @@ body {
 
 .about-para2 {
   margin-top: 15px;
+}
+
+#working-methods {
+  margin-top: 1px;
+}
+
+#working-methods > iframe {
+  width: 400px;
+  height: 356px;
 }
 
 .services {
@@ -469,6 +499,16 @@ body {
   font-size: 30px;
 }
 
+.services-textinside1 h3 {
+  position: relative;
+  bottom: 87px;
+  left: 130px;
+  color: white;
+  font-weight: bold;
+  font-family: "Josefin";
+  font-size: 30px;
+}
+
 .slide-1 {
   height: 37px;
   width: 37px;
@@ -515,7 +555,7 @@ body {
 }
 
 .groom-heading {
-  margin-top: 40px;
+  margin: 20px 0px;
   font-family: "Josefin";
   font-size: 20px;
   font-weight: bold;
@@ -524,6 +564,7 @@ body {
 .groom-text {
   font-family: "Josefin";
   font-size: 18px;
+  margin-top: 20px;
 }
 
 .Bride-clients {
@@ -534,7 +575,7 @@ body {
 }
 
 .bride-heading {
-  margin-top: 20px;
+  margin: 20px 0px;
   font-family: "Josefin";
   font-size: 20px;
   font-weight: bold;
@@ -542,6 +583,7 @@ body {
 
 .bride-text {
   font-size: 18px;
+  margin-top: 20px;
 }
 
 .last-heading {
@@ -553,6 +595,7 @@ body {
 .last-heading h3 {
   margin-bottom: 20px;
   font-weight: bold;
+  font-size: 30px;
 }
 
 .last-section {
@@ -576,7 +619,7 @@ body {
 
 .footer-images {
   height: 300px;
-  width: 120px;
+  width: 140px;
   margin-right: 6px;
 }
 
@@ -591,10 +634,10 @@ body {
 }
 
 .footer-para {
-  margin-bottom: 15px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   font-family: "Josefin";
+  margin-bottom: 30px;
 }
 
 .last-btn {
@@ -625,11 +668,12 @@ body {
 }
 
 .footer-1 img {
-  height: 80px;
-  width: 130px;
+  height: 46px;
+  width: 120px;
   -o-object-fit: contain;
      object-fit: contain;
   margin-top: 25px;
+  background-color: white;
 }
 
 .footer-2 {
@@ -657,6 +701,41 @@ body {
   margin-right: 10px;
 }
 
+.form-control {
+  padding: 17px 27px;
+  font-family: "Baloo2";
+  font-size: 20px;
+  color: rgb(0, 62, 84);
+  width: 560px;
+}
+
+.New {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.New h2 {
+  color: #742296;
+}
+
+.form-label {
+  color: #742296;
+}
+
+.form-select {
+  color: #742296;
+}
+
+.b-submit {
+  background-color: #742296;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
 @media (min-width: 575.98px) {
   #hamburger {
     display: none;
@@ -671,8 +750,11 @@ body {
     position: relative;
     bottom: 10px;
   }
+  .main-navbar {
+    margin: 0px;
+  }
   .open .menu {
-    height: 101vh;
+    height: 105vh;
     margin-top: -28%;
     z-index: 1;
     list-style: none;
@@ -713,6 +795,11 @@ body {
     left: 30px;
     top: 19px;
   }
+  #working-methods > iframe {
+    width: 280px;
+    margin-left: 20px;
+    height: 345px;
+  }
   .small-lists {
     font-size: 14px;
     display: none;
@@ -722,6 +809,15 @@ body {
   }
   .text-banner p {
     font-size: 14px;
+    margin: 10px 0;
+  }
+  .circle-mode {
+    height: 20px;
+    width: 20px;
+  }
+  .circle-mode2 {
+    height: 18px;
+    width: 18px;
   }
   .first-tag {
     font-size: 10px;
@@ -744,13 +840,13 @@ body {
   }
   .text-banner h1 {
     font-size: 18px;
-    margin-top: 30px;
+    margin-top: 5px;
   }
   .images-banner {
     margin-right: 5px;
     padding: 5px;
     position: relative;
-    bottom: 20px;
+    bottom: 70px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -776,12 +872,12 @@ body {
     display: none;
   }
   .heading-3 {
-    margin-left: 38px;
+    margin-left: 46px;
   }
   .about-para1 {
     font-size: 13px;
     position: relative;
-    right: 16px;
+    right: 9px;
   }
   .img-about3 {
     height: 332px;
@@ -791,10 +887,10 @@ body {
     display: none;
   }
   .img-about-dance {
-    height: 295px;
+    height: 280px;
     width: 275px;
     position: relative;
-    left: 12px;
+    left: 16px;
   }
   .youtube-video {
     position: relative;
@@ -804,19 +900,19 @@ body {
   .youtube-activation {
     position: relative;
     height: 35px;
-    left: 140px;
-    top: -136px;
+    right: 153px;
+    top: -130px;
   }
   .about-para2 {
     font-size: 13px;
     margin-bottom: 100px;
-    margin-left: 11px;
+    margin-left: 20px;
   }
   .about-btn {
     font-size: 12px;
     position: relative;
     top: -62px;
-    left: 10px;
+    left: 20px;
   }
   .left-arrow {
     position: relative;
@@ -875,6 +971,9 @@ body {
   }
   .services-textinside h3 {
     font-size: 20px;
+    position: relative;
+    bottom: 156px;
+    right: 60px;
   }
   .services {
     padding: 0px;

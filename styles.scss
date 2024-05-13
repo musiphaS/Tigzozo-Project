@@ -17,6 +17,9 @@ body {
     transition: background-color 0.3s ease;
 }
 
+.circle-mode2 {
+    display: none;
+}
 .light-mode {
     background-color: #fff;
     color: #000;
@@ -35,12 +38,24 @@ body {
     .play-1 {
         display: none;
     }
+    .mark-1 {
+        display: none;
+    }
     .circle-mode {
             display: inline-block;
+            position: relative;
+            top: 5px;
         }
-    // .circle-mode {
-    //     background-image: url(Icon\ feather-play-circle\ 1\ -purple.svg);
-    // }
+    .circle-mode2 {
+            display: inline-block;
+            position: relative;
+            margin-left: 1px;
+            top: 2px;
+            margin-left: 1px;
+        }
+        .footer-1 img {
+            background-color: black;
+        }
 }
 
 .light-mode {
@@ -161,7 +176,7 @@ body {
     display: flex;
     list-style: none;
     position: relative;
-    left: 150px;
+    left: 100px;
 
 }
 
@@ -171,7 +186,7 @@ body {
     font-family: "Josefin";
     text-decoration: none;
     color: #000;
-    font-weight: bold;
+    // font-weight: bold;
 }
 .small-lists1 {
     color: #742296;
@@ -179,7 +194,7 @@ body {
     font-size: 25px;
     font-family: "Josefin";
     text-decoration: none;
-    font-weight:bold;
+    // font-weight:bold;
     
 }
 // code for dark theme mode.
@@ -190,9 +205,7 @@ body {
     height: 33px;
     width: 33px;
     position: relative;
-    right: 60px;
-    // position: relative;
-    // left: 50px;
+    right: 75px;
     cursor: pointer;
 }
 
@@ -221,8 +234,6 @@ body {
     .line-top {
         margin-top: 50px;
         color: #742296;
-        // position: relative;
-        // left: 5px;
     }
     h1 {
         font-family: "Josefin";
@@ -232,8 +243,7 @@ body {
     p {
         font-size: 21px;
         font-family: "Josefin";
-        margin-top: 20px;
-        // font-weight: 600;
+        margin: 20px 0;
     }
 }
 
@@ -252,6 +262,11 @@ body {
     height: 30px;
     width: 30px;
     display: none;
+}
+
+.circle-mode2 {
+    height: 28px;
+    width: 28px;
 }
 .mark-1 {
     height: 30px;
@@ -281,8 +296,8 @@ body {
 
 .second-tag {
     border: 3px solid #742296;
-    border-left: 5px solid #742296;
-    border-right: 5px solid #742296;
+    border-left: 6px solid #742296;
+    border-right: 6px solid #742296;
     text-decoration: none;
     padding: 10px 15px;
     color: black;
@@ -297,22 +312,24 @@ body {
 }
 .banner-images {
     height: 465px;
-    width: 170px;
-    // width: 155px;
+    width: 180px;
     margin-right: 7px;
+    object-fit: cover;
 }
 .banner-images1 {
     height: 450px;
-    width: 170px;
+    width: 185px;
     position: relative;
     bottom: 60px;
     margin-right: 7px;
+    object-fit: cover;
 }
 
 .about {
     display: flex;
     justify-content: space-evenly;
     margin-top: 40px;
+    // margin-left: 30px;
     margin-bottom: 120px;
     font-family: "Josefin";
 }
@@ -348,11 +365,11 @@ body {
     margin-top: 80px;
 }
 
-.img-about-dance {
-    height: 356px;
-    width: 400px;
-    margin-top: 3px;
-}
+// .img-about-dance {
+//     height: 356px;
+//     width: 400px;
+//     margin-top: 3px;
+// }
 .you-tube {
     position: relative;
     left: 57px;
@@ -365,6 +382,7 @@ body {
 }
 .youtube-video {
     position: relative;
+    right: 50px;
     // right: 57px;
 }
 
@@ -393,6 +411,16 @@ body {
 .about-para2 {
     margin-top: 15px;
 }
+
+#working-methods {
+    margin-top: 1px;
+}
+
+#working-methods > iframe {
+    width: 400px;
+    height: 356px;
+}
+
 
 
 // .about-2imgs {
@@ -509,6 +537,18 @@ body {
     font-size: 30px;
     }
 }
+
+.services-textinside1 {
+    h3 {
+        position: relative;
+        bottom: 87px;
+        left: 130px;
+        color: white;
+        font-weight: bold;
+        font-family: "Josefin";
+        font-size: 30px;
+        }
+}
 .slide-1 {
     height: 37px;
     width: 37px;
@@ -558,7 +598,7 @@ body {
 //     left: 10px;
 // }
 .groom-heading {
-    margin-top: 40px;
+    margin: 20px 0px;
     font-family: "Josefin";
     font-size: 20px;
     font-weight: bold;
@@ -567,6 +607,7 @@ body {
     // line-height: 1.2;
     font-family: "Josefin";
     font-size: 18px;
+    margin-top: 20px;
 }
 .Bride-clients{
     margin-right:5px;
@@ -580,13 +621,14 @@ body {
 //     right: 78px;
 // }
 .bride-heading {
-    margin-top: 20px;
+    margin: 20px 0px;
     font-family: "Josefin";
     font-size: 20px;
     font-weight: bold;
 }
 .bride-text {
     font-size: 18px;
+    margin-top: 20px;
 }
 .last-heading {
     display: flex;
@@ -598,6 +640,7 @@ body {
     h3{
         margin-bottom: 20px;
         font-weight: bold;
+        font-size: 30px;
         // text-shadow: 1px rgba(0, 0, 0, 1);
     }
 }
@@ -621,9 +664,7 @@ body {
 }
 .footer-images {
     height: 300px;
-    // width: 140px;
-    width: 120px;
-    // object-fit: contain;
+    width: 140px;
     margin-right: 6px;
 }
 .footer-images1 {
@@ -636,11 +677,10 @@ body {
 }
 
 .footer-para {
-    margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
-    // font-family: "Gotham";
     font-family: "Josefin";
+    margin-bottom: 30px;
 }
 
 
@@ -677,10 +717,11 @@ body {
     line-height: 1.6;
 }
 .footer-1 img {
-    height: 80px;
-    width: 130px;
+    height: 46px;
+    width: 120px;
     object-fit: contain;
     margin-top: 25px;
+    background-color: white;
 }
 
 .footer-2 {
@@ -705,6 +746,40 @@ body {
     margin-right: 10px;
 }
 
+.form-control {
+    padding: 17px 27px;
+    font-family: "Baloo2";
+    font-size: 20px;
+    color: rgb(0 62 84);
+    width: 560px;
+   
+}
+.New {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+
+    h2 {
+        color: #742296;
+    }
+}
+.form-label {
+    color: #742296;
+}
+.form-select {
+    color: #742296;
+}
+
+.b-submit {
+    background-color: #742296;
+    color: white;
+    padding: 10px 15px;
+    border:none;
+    border-radius: 5px;
+}
+
 @media (min-width: 575.98px) {
     #hamburger {
         display: none;
@@ -724,9 +799,12 @@ body {
         position: relative;
         bottom: 10px;
     }
+    .main-navbar {
+        margin: 0px;
+    }
 
     .open .menu {
-        height: 101vh;
+        height: 105vh;
         margin-top: -28%;
         z-index: 1;
         list-style: none;
@@ -771,6 +849,12 @@ body {
         top: 19px;
     }
 
+    #working-methods > iframe {
+        width: 280px;
+        margin-left: 20px;
+        height: 345px;
+    }
+
     .small-lists {
         font-size: 14px;
         display: none;
@@ -781,6 +865,15 @@ body {
     }
     .text-banner p {
         font-size: 14px;
+        margin: 10px 0;
+    }
+    .circle-mode {
+        height: 20px;
+        width: 20px;
+    }
+    .circle-mode2 {
+        height: 18px;
+        width: 18px;
     }
     .first-tag {
         font-size: 10px;
@@ -809,24 +902,20 @@ body {
     }
     .text-banner h1 {
         font-size: 18px;
-        margin-top: 30px;
+        margin-top: 5px;
     }
     
     .images-banner {
         margin-right: 5px;
         padding: 5px;
         position: relative;
-        // bottom: 60px;
-        bottom: 20px;
+        bottom: 70px;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        // left: 12px;
     }
-    // .heading-3 {
-    //     position: relative;
-    //     bottom: 90px;
-    // }
+    
+
     .banner-images {
         height: 354px;
         padding-left: 8px;
@@ -848,12 +937,12 @@ body {
     }
 
     .heading-3 {
-        margin-left: 38px;
+        margin-left: 46px;
     }
     .about-para1 {
         font-size: 13px;
         position: relative;
-        right: 16px;
+        right: 9px;
     }
     .img-about3 {
         height: 332px;
@@ -863,10 +952,10 @@ body {
         display: none;
     }
     .img-about-dance {
-        height: 295px;
+        height: 280px;
         width: 275px;
         position: relative;
-        left: 12px;
+        left: 16px;
     }
     .youtube-video {
         position: relative;
@@ -876,20 +965,19 @@ body {
     .youtube-activation {
         position: relative;
         height: 35px;
-        left: 140px;
-        // top: -162px;
-        top: -136px;
+        right: 153px;
+        top: -130px;
     }
     .about-para2 {
         font-size: 13px;
         margin-bottom: 100px;
-        margin-left: 11px;
+        margin-left: 20px;
     }
     .about-btn {
         font-size: 12px;
         position: relative;
         top: -62px;
-        left: 10px;
+        left: 20px;
     }
 
     .left-arrow {
@@ -957,6 +1045,9 @@ body {
     }
     .services-textinside h3 {
         font-size: 20px;
+        position: relative;
+        bottom: 156px;
+        right: 60px;
     }
     .services {
         padding: 0px;
