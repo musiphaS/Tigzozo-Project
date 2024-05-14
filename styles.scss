@@ -454,6 +454,7 @@ body {
     width: 340px;
     height: 540px;
     line-height: 2.2;
+    margin: 0px 20px;
 
     h3 {
         color: white;
@@ -1013,7 +1014,7 @@ body {
     }
     .left-arrow1 {
         position: relative;
-        left: 292px;
+        left: 288px;
         top: -50px;
         height: 50px;
         width: 50px;
@@ -1051,7 +1052,7 @@ body {
         height: 485px;
         position: relative;
         bottom: 146px;
-        left: 31px;
+        left: 9px;
     }
     .service-img2 h3 {
         font-size: 18px;
@@ -1062,7 +1063,8 @@ body {
         height: 485px;
         position: relative;
         bottom: 86px;
-        right: 36px;
+        right: 38px;
+        margin-top: 150px;
     }
 
     .services-images3 {
@@ -1070,7 +1072,7 @@ body {
         width: 335px;
         position: relative;
         bottom: 196px;
-        left: 98px;
+        left: 95px;
     }
     .service-img2 p {
         font-size: 16px;
@@ -1155,12 +1157,17 @@ body {
         right: 22px;
         object-fit: cover;
     }
+    .groom-clients {
+        position: relative;
+        top: 55px;
+        left: 22px;
+    }
 
     .clients-pic2 {
         height: 485px;
         width: 335px;
         position: relative;
-        right: -4px;
+        right: 0px;
         object-fit: cover;
     }
 .last-heading {
@@ -1552,17 +1559,12 @@ body {
 
 // @media only screen and (min-width: 1399.98px) {
 
-//     .banner-images {
-//         width: 165px;
-//         object-fit: cover;
-//     }
-//     .service1 {
-//         position: relative;
-//         left: 65px;
-//         margin-right: 10px;
-//     }
-//     .service2 {
-//         margin-right: 10px;
+//     .service-img2 {
+//         background-color: #742296;
+//         width: 340px;
+//         height: 540px;
+//         line-height: 2.2;
+        
 //     }
 //     .footer {
 //         display: flex;
