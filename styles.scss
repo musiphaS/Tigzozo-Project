@@ -1551,6 +1551,19 @@ body {
 }
 
 @media only screen and (min-width: 1399.98px) {
+
+    .banner-images {
+        width: 165px;
+        object-fit: cover;
+    }
+    .service1 {
+        position: relative;
+        left: 65px;
+        margin-right: 10px;
+    }
+    .service2 {
+        margin-right: 10px;
+    }
     .footer {
         display: flex;
         justify-content: space-evenly;
