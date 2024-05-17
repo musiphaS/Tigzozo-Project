@@ -341,6 +341,11 @@ body {
 
 .about-para1 {
     font-size: 18px;
+    line-height: 1.1;
+}
+.about-para2 {
+    font-size: 18px;
+    line-height: 1.1;
 }
 
 .about-btn {
@@ -398,7 +403,7 @@ body {
 
 .about-2imgs {
     position: relative;
-    top: 65px;
+    top: 75px;
 }
 .img-about2 {
     height: 270px;
@@ -630,6 +635,7 @@ body {
 .bride-text {
     font-size: 18px;
     margin-top: 20px;
+    line-height: 1.1;
 }
 .last-heading {
     display: flex;
@@ -1575,3 +1581,66 @@ body {
 //         margin-top: 128px;
 //     }
 // }
+
+@media only screen and (min-width: 1500px) {
+    .banner-section {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 90px 0px;
+    }
+    .tig-logo {
+        height: 53px;
+        position: relative;
+        right: -32px;
+    }
+    .img-about2 {
+        height: 315px;
+        width: 280px;
+        position: relative;
+        right: 8px;
+        top: 30px;
+        // -o-object-fit: cover;
+        object-fit: cover;
+    }
+    .img-about3 {
+        height: 315px;
+        width: 280px;
+        position: relative;
+        bottom: 50px;
+        // -o-object-fit: cover;
+        object-fit: cover;
+    }
+    .service-img2 {
+        background-color: #742296;
+        width: 450px;
+        height: 540px;
+        line-height: 2.2;
+        margin: 0px -19px;
+    }
+    .services-images3 {
+        width: 450px;
+        height: 540px;
+        object-fit: cover;
+    }
+    .services-images1 {
+        width: 450px;
+        height: 540px;
+        object-fit: cover;
+    }
+    #working-methods > iframe {
+        width: 600px;
+        height: 412px;
+    }
+
+    .clients-pic2 {
+        height: 340px;
+        width: 450px;
+        object-fit: cover;
+    }
+    .clients-pic1 {
+        height: 340px;
+        width: 450px;
+        object-fit: cover;
+    }
+}
+
