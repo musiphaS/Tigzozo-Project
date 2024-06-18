@@ -187,7 +187,7 @@ body {
   height: 33px;
   width: 33px;
   position: relative;
-  right: 75px;
+  right: 65px;
   cursor: pointer;
 }
 
@@ -200,7 +200,12 @@ body {
 .banner-section {
   display: flex;
   justify-content: space-between;
-  margin: 90px 0px;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.banners-images {
+  display: contents;
 }
 
 .fa-solid {
@@ -213,6 +218,11 @@ body {
 .text-banner .line-top {
   margin-top: 50px;
   color: #742296;
+  font-size: 21px;
+  font-family: "Josefin";
+}
+.text-banner .line-top a {
+  text-decoration: none;
 }
 .text-banner h1 {
   font-family: "Josefin";
@@ -283,21 +293,17 @@ body {
   font-size: 18px;
 }
 
-.images-banner {
-  margin-right: 30px;
-}
-
 .banner-images {
-  height: 465px;
-  width: 150px;
+  height: 0%;
+  width: 14%;
   margin-right: 7px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .banner-images1 {
-  height: 450px;
-  width: 150px;
+  height: 0%;
+  width: 14%;
   position: relative;
   bottom: 60px;
   margin-right: 7px;
@@ -415,6 +421,18 @@ body {
   justify-content: space-evenly;
 }
 
+.overlay1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 100%;
+  height: 100%;
+  width: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: 0.8s;
+}
+
 .service-img2 {
   background-color: #742296;
   width: 340px;
@@ -468,9 +486,65 @@ body {
   padding-bottom: 25px;
 }
 
+/*Overlay*/
+.service1 .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 100%;
+  height: 93%;
+  width: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: 0.8s;
+}
+
+.service1:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+/* Text */
+.overlay h3 {
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .services-images1 {
   width: 340px;
   height: 540px;
+}
+
+/*Overlay2*/
+.service3 .overlay2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 100%;
+  height: 93%;
+  width: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: 0.8s;
+}
+
+.service3:hover .overlay2 {
+  width: 100%;
+  left: 0;
+}
+
+/* Text */
+.overlay2 h3 {
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .service1 {
@@ -491,19 +565,6 @@ body {
 .close {
   display: flex;
   justify-content: flex-end;
-}
-
-.services-textinside {
-  display: flex;
-  justify-content: center;
-}
-.services-textinside h3 {
-  position: relative;
-  bottom: 87px;
-  color: white;
-  font-weight: bold;
-  font-family: "Josefin";
-  font-size: 30px;
 }
 
 .services-textinside1 h3 {
@@ -855,6 +916,10 @@ body {
     border-left: 4px solid #742296;
     border-right: 4px solid #742296;
   }
+  .text-banner .line-top a {
+    text-decoration: none;
+    font-size: 14px;
+  }
   .play-1 {
     height: 20px;
     width: 20px;
@@ -887,11 +952,15 @@ body {
     font-size: 20px;
   }
   .banner-images {
-    height: 430px;
-    padding-left: 8px;
-    width: 165px;
+    height: auto;
+    width: 49%;
+    margin-bottom: 10px;
+    margin-top: -73px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .banners-images {
+    display: flex;
   }
   .banner-images1 {
     bottom: 34px;
@@ -991,8 +1060,14 @@ body {
     width: 335px;
     height: 485px;
     position: relative;
-    bottom: 146px;
-    left: 9px;
+    bottom: 129px;
+    left: 8px;
+  }
+  .service1 .overlay {
+    display: none;
+  }
+  .service3 .overlay2 {
+    display: none;
   }
   .service-img2 h3 {
     font-size: 18px;
@@ -1029,7 +1104,7 @@ body {
     right: 10px;
   }
   .slide-1 {
-    right: 76px;
+    right: 78px;
     position: relative;
     bottom: 140px;
     height: 50px;
@@ -1040,7 +1115,7 @@ body {
     width: 50px;
     position: relative;
     bottom: 250px;
-    left: 56px;
+    left: 55px;
   }
   .close-1 {
     position: relative;
@@ -1184,16 +1259,6 @@ body {
   .second-tag {
     font-size: 14px;
   }
-  .images-banner {
-    display: flex;
-    margin-right: 16px;
-  }
-  .banner-images {
-    position: relative;
-    bottom: 29px;
-    height: 278px;
-    width: 85px;
-  }
   .banner-images1 {
     height: 265px;
     width: 85px;
@@ -1312,6 +1377,9 @@ body {
   .heading-32 {
     font-size: 16px;
   }
+  .clients {
+    overflow: hidden;
+  }
   .clients-pic1 {
     height: 285px;
     width: 325px;
@@ -1354,6 +1422,14 @@ body {
   }
   .footer {
     margin-top: 148px;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .clients {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Josefin";
+    overflow: hidden;
   }
 }
 @media only screen and (min-width: 993px) and (max-width: 1024px) {

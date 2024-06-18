@@ -27,7 +27,7 @@ body {
 .dark-mode {
     background-color: #1f1f1f;
     color: #fff;
-    // background-image: url(darkmode-light.svg.svg);
+// background-image: url(darkmode-light.svg.svg);
 
     .second-tag {
         color: #fff;
@@ -205,7 +205,7 @@ body {
     height: 33px;
     width: 33px;
     position: relative;
-    right: 75px;
+    right: 65px;
     cursor: pointer;
 }
 
@@ -220,8 +220,14 @@ body {
 .banner-section {
     display: flex;
     justify-content: space-between;
-    margin: 90px 0px;
+    padding: 20px;
+    margin-top: 60px;
 }
+
+.banners-images {
+    display: contents;
+}
+
 
 .fa-solid {
     font-size: 20px;
@@ -234,6 +240,13 @@ body {
     .line-top {
         margin-top: 50px;
         color: #742296;
+        font-size: 21px;
+        font-family: "Josefin";
+
+        a {
+            text-decoration: none;
+        }
+        
     }
     h1 {
         font-family: "Josefin";
@@ -307,18 +320,19 @@ body {
 }
 
 
-.images-banner {
-    margin-right: 30px;
-}
+// .images-banner {
+//     margin-right: 30px;
+// }
+
 .banner-images {
-    height: 465px;
-    width: 150px;
+    height: 0%;
+    width: 14%;
     margin-right: 7px;
     object-fit: cover;
 }
 .banner-images1 {
-    height: 450px;
-    width: 150px;
+    height: 0%;
+    width: 14%;
     position: relative;
     bottom: 60px;
     margin-right: 7px;
@@ -359,7 +373,6 @@ body {
     top: 30px;
 }
 
-
 .heading-3 {
     margin-left: 60px;
     font-family: "Josefin";
@@ -370,11 +383,6 @@ body {
     margin-top: 80px;
 }
 
-// .img-about-dance {
-//     height: 356px;
-//     width: 400px;
-//     margin-top: 3px;
-// }
 .you-tube {
     position: relative;
     left: 57px;
@@ -454,6 +462,19 @@ body {
     display: flex;
     justify-content: space-evenly;
 }
+
+.overlay1{
+    position:absolute;
+    bottom:0;
+    right:0;
+    left:100%;
+    height:100%;
+    width:0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition:0.8s;
+  }
+
 .service-img2 {
     background-color: #742296;
     width: 340px;
@@ -488,6 +509,81 @@ body {
     top: 6px;
 }
 
+
+// overlay
+// .container .title{
+//     color: #1a1a1a;
+//     text-align: center;
+//     margin-bottom: 10px;
+// }
+
+// .content {
+//     position: relative;
+//     width: 90%;
+//     max-width: 400px;
+//     margin: auto;
+//     overflow: hidden;
+// }
+// .content .content-overlay {
+//     background: rgba(0,0,0,0.7);
+//     position: absolute;
+//     height: 99%;
+//     width: 100%;
+//     left: 0;
+//     top: 0;
+//     bottom: 0;
+//     right: 0;
+//     opacity: 0;
+//     -webkit-transition: all 0.4s ease-in-out 0s;
+//     -moz-transition: all 0.4s ease-in-out 0s;
+//     transition: all 0.4s ease-in-out 0s;
+//   }
+//   .content:hover .content-overlay{
+//     opacity: 1;
+//   }
+//   .content-details {
+//     position: absolute;
+//     text-align: center;
+//     padding-left: 1em;
+//     padding-right: 1em;
+//     width: 100%;
+//     top: 50%;
+//     left: 50%;
+//     opacity: 0;
+//     -webkit-transform: translate(-50%, -50%);
+//     -moz-transform: translate(-50%, -50%);
+//     transform: translate(-50%, -50%);
+//     -webkit-transition: all 0.3s ease-in-out 0s;
+//     -moz-transition: all 0.3s ease-in-out 0s;
+//     transition: all 0.3s ease-in-out 0s;
+//   }
+  
+//   .content:hover .content-details{
+//     top: 50%;
+//     left: 50%;
+//     opacity: 1;
+//   }
+  
+//   .content-details h3{
+//     color: #fff;
+//     font-weight: 500;
+//     letter-spacing: 0.15em;
+//     margin-bottom: 0.5em;
+//     text-transform: uppercase;
+//   }
+  
+//   .content-details p{
+//     color: #fff;
+//     font-size: 0.8em;
+//   }
+  
+//   .fadeIn-bottom{
+//     top: 80%;
+//   }  
+
+// overlay
+
+
 .under-line1 {
     text-decoration: underline;
     margin-left: 35px;
@@ -503,21 +599,76 @@ body {
     margin-left: 24px;
     padding-bottom: 25px;
 }
+
+    /*Overlay*/
+    .service1 .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 100%;
+        height: 93%;
+        width: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        transition: 0.8s;
+    }
+      .service1:hover .overlay{
+        width: 100%;
+        left: 0;
+      }
+
+    /* Text */
+  .overlay h3{
+    position:absolute;
+     color: #fff;
+     font-size: 25px;
+     bottom:0;
+     left:50%;
+     transform: translate(-50%,-50%);
+    //  white-space: nowrap;
+   }
 .services-images1 {
     width: 340px;
     height: 540px;
+}
+
+  /*Overlay2*/
+  .service3 .overlay2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 100%;
+    height: 93%;
+    width: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: 0.8s;
+}
+  .service3:hover .overlay2{
+    width: 100%;
+    left: 0;
+  }
+
+/* Text */
+.overlay2 h3{
+position:absolute;
+ color: #fff;
+ font-size: 25px;
+ bottom:0;
+ left:50%;
+ transform: translate(-50%,-50%);
+//  white-space: nowrap;
 }
 
 .service1 {
     position: relative;
     left: 65px;
 }
+
 .service3 {
     position: relative;
     right: 68px;
 }
-
-
 
 .services-images3 {
     width: 340px;
@@ -530,19 +681,19 @@ body {
     justify-content:flex-end;
 }
 
-.services-textinside {
-    display: flex;
-    justify-content: center;
+// .services-textinside {
+//     display: flex;
+//     justify-content: center;
 
-    h3 {
-    position: relative;
-    bottom: 87px;
-    color: white;
-    font-weight: bold;
-    font-family: "Josefin";
-    font-size: 30px;
-    }
-}
+//     h3 {
+//     position: relative;
+//     bottom: 87px;
+//     color: white;
+//     font-weight: bold;
+//     font-family: "Josefin";
+//     font-size: 30px;
+//     }
+// }
 
 .services-textinside1 {
     h3 {
@@ -907,6 +1058,11 @@ body {
         border-left: 4px solid #742296;
         border-right: 4px solid #742296;
     }
+    .text-banner .line-top a {
+        text-decoration: none;
+        font-size: 14px;
+    }
+    
     .play-1 {
         height: 20px;
         width: 20px;
@@ -946,10 +1102,14 @@ body {
     }
 
     .banner-images {
-        height: 430px;
-        padding-left: 8px;
-        width: 165px;
+        height: auto;
+        width: 49%;
+        margin-bottom: 10px;
+        margin-top: -73px;
         object-fit: cover;
+    }
+    .banners-images {
+        display: flex;
     }
     .banner-images1 {
         bottom: 34px;
@@ -1057,8 +1217,14 @@ body {
         width: 335px;
         height: 485px;
         position: relative;
-        bottom: 146px;
-        left: 9px;
+        bottom: 129px;
+        left: 8px;
+    }
+    .service1 .overlay {
+        display: none;
+    }
+    .service3 .overlay2 {
+        display: none;
     }
     .service-img2 h3 {
         font-size: 18px;
@@ -1097,7 +1263,7 @@ body {
         right: 10px;
     }
     .slide-1 {
-        right: 76px;
+        right: 78px;
         position: relative;
         bottom: 140px;
         height: 50px;
@@ -1109,7 +1275,7 @@ body {
         width: 50px;
         position: relative;
         bottom: 250px;
-        left: 56px;
+        left: 55px;
     }
     .close-1 {
         position: relative;
@@ -1277,18 +1443,15 @@ body {
         // display: none;
 
     }
-    .images-banner {
-        display: flex;
-        margin-right: 16px;
-        // overflow: hidden;
-    }
+   
 
-    .banner-images {
-        position: relative;
-        bottom: 29px;
-        height: 278px;
-        width: 85px;
-    }
+    // .banner-images {
+    //     position: relative;
+    //     bottom: 29px;
+    //     height: 278px;
+    //     width: 85px;
+    // }
+    
     
     .banner-images1 {
         height: 265px;
@@ -1417,6 +1580,10 @@ body {
     .heading-32 {
         font-size: 16px;
     }
+
+    .clients {
+        overflow: hidden;
+    }
     .clients-pic1 {
         height: 285px;
         width: 325px;
@@ -1462,7 +1629,17 @@ body {
     }
 }
 
+@media only screen and (min-width:767px) {
+    .clients {
+        display: flex;
+        justify-content: space-evenly;
+        font-family: "Josefin";
+        overflow: hidden;
+    }
+}
+
 @media only screen and (min-width:993px) and (max-width: 1024px) {
+
     .banner-images1 {
         height: 450px;
         width: 120px;
