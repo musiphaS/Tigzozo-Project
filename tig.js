@@ -23,3 +23,10 @@ function toggleDarkMode() {
     // const darkModeimage = document.getElementById('toggle-dark-mode-image');
     darkModeimage.addEventListener('click', toggleDarkMode);
 }
+
+// toggle menu 
+document.querySelectorAll(".dropdown").forEach((dd) => {
+    dd.querySelector(".dropdown-trigger").onclick = () =>
+      dd.classList.toggle("active");
+  });
+  

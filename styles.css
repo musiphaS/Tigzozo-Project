@@ -464,7 +464,7 @@ body {
   width: 60px;
   position: relative;
   right: 62px;
-  top: 6px;
+  bottom: 38px;
 }
 
 .under-line1 {
@@ -610,8 +610,10 @@ body {
 }
 
 .clients-pic2 {
-  height: 340px;
-  width: 405px;
+  height: 429px;
+  width: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .heading-32 {
@@ -751,6 +753,18 @@ body {
   line-height: 1.7;
 }
 
+.footer-3 {
+  margin-top: 25px;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.footer-4 {
+  margin-top: 25px;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
 .under-line {
   text-decoration: underline;
   font-size: 22px;
@@ -826,6 +840,12 @@ body {
 
 @media (min-width: 575.98px) {
   #hamburger {
+    display: none;
+  }
+  #down-arrow {
+    display: none;
+  }
+  .dropdown {
     display: none;
   }
 }
@@ -1187,8 +1207,76 @@ body {
   .footer-2 {
     font-size: 14px;
   }
+  .dropdown {
+    position: relative;
+    line-height: 2;
+  }
+  .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: absolute;
+    opacity: 0;
+    z-index: 9;
+    transition: height 0.8s ease;
+    transition: opacity 0.3s ease;
+    height: 0;
+    overflow: hidden;
+    border-radius: 3px;
+  }
+  .about-footer {
+    font-family: "Josefin";
+    font-size: 18px;
+    text-decoration: underline;
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+    fill: white;
+  }
+  .footer-2 {
+    display: none;
+  }
+  .footer-3 {
+    display: none;
+  }
+  .footer-4 {
+    display: none;
+  }
+  .dropdown.active .dropdown-content {
+    opacity: 1;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: relative;
+    background: none;
+    line-height: 1.6;
+  }
+  .dropdown-trigger {
+    border: none;
+    padding: 0.1rem 0.5rem;
+    background: none;
+    color: white;
+  }
+  .dropdown-trigger > i > svg {
+    width: 0.7rem;
+    height: 0.7rem;
+    transform: rotate(90deg);
+    transition: all 0.6s ease;
+    position: relative;
+    top: 0.9px;
+  }
+  .dropdown.active .dropdown-trigger > i > svg {
+    width: 0.7rem;
+    height: 0.7rem;
+    transform: rotate(-90deg);
+  }
+  p {
+    padding: 0.1rem 0.5rem;
+  }
   .fa-brands {
     font-size: 20px;
+    margin-left: 10px;
   }
   .homebtn {
     font-size: 14px;
@@ -1196,7 +1284,7 @@ body {
   .footer {
     display: flex;
     flex-direction: column;
-    padding-left: 40px;
+    padding-left: 30px;
   }
   .under-line {
     font-size: 18px;
@@ -1310,8 +1398,8 @@ body {
     height: 60px;
     width: 60px;
     position: relative;
-    left: 268px;
-    top: -57px;
+    left: 269px;
+    top: -61px;
   }
   .Bride-clients {
     margin-right: 5px;
@@ -1576,17 +1664,5 @@ body {
   #working-methods > iframe {
     width: 600px;
     height: 412px;
-  }
-  .clients-pic2 {
-    height: 340px;
-    width: 450px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .clients-pic1 {
-    height: 340px;
-    width: 450px;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }/*# sourceMappingURL=styles.css.map */
